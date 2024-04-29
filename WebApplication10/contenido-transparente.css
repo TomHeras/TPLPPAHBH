@@ -1,0 +1,18 @@
+﻿/* Estilos para el cuerpo de la página */
+body {
+    /* Propiedades CSS para el cuerpo de la página */
+}
+
+/* Estilos para el contenido transparente */
+.contenido-transparente {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente con 50% de opacidad */
+    padding: 10px; /* Ajusta según sea necesario */
+}
+
+    /* Estilos para los elementos dentro del contenido transparente */
+    .contenido-transparente h1,
+    .contenido-transparente h2,
+    .contenido-transparente p,
+    .contenido-transparente img {
+        background-color: transparent; /* Fondo transparente para los elementos internos */
+    }

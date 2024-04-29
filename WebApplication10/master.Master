@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.Master.cs" Inherits="WebApplication10.master" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="fondowebmaster.png" rel="icon" type="image/gif" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <style>
+            body {
+                background-image: url('webmasterfondo.png'); /* Ruta de tu imagen de fondo */
+                background-size: cover; /* Ajustar la imagen de fondo para cubrir todo el cuerpo */
+                background-repeat: no-repeat; /* Evitar que la imagen se repita */
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+
+	<!-- Bootstrap Styles-->
+    <link href="cssss/bootstrap2.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="cssss/cuadraditos.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="cssss/estilo2.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="webm.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="WebMaster.aspx"><i class="fa fa-comments"></i> <strong>WebMaster </strong></a>
+            </div>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a href="Bitacora.aspx"><i class="fa fa-book"></i>Bitácora</a>
+                    </li>
+                    <li>
+                        <a href="Backup.aspx"><i class="fa fa-cloud-download"></i> Backup</a>
+                    </li>
+					<li>
+                        <a href="Restore.aspx"><i class="fa fa-caret-square-o-down"></i>Restore</a>
+                    </li>
+                    <li>
+                        <a href="Login.aspx"><i class="fa fa-sign-out"></i>Sign Out</a>
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+			 <div class="row">
+                    <div class="col-md-12">
+                        <asp:ContentPlaceHolder id="ContentBody" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div> 
+                 <!-- /. ROW  -->
+				 
+				</div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    </form>
+
+    <!-- JS Scripts-->
+    <!-- jQuery Js -->
+    <script src="Scripts/js/jquery-1.10.2.js"></script>
+      <!-- Bootstrap Js -->
+    <script src="Scripts/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Js -->
+    <script src="Scripts/js/jquery.metisMenu.js"></script>
+      <!-- Custom Js -->
+    <script src="Scripts/js/custom-scripts.js"></script>
+</body>
+</html>

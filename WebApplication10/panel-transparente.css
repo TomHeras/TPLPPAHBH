@@ -1,0 +1,15 @@
+﻿
+panel-transparente
+
+{
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo transparente con 50% de opacidad */
+    padding: 10px; /* Ajusta según sea necesario */
+}
+
+.panel-transparente .table-responsive,
+.panel-transparente .form-control,
+/*.panel-transparente .btn {*/
+    /*background-color: rgba(255, 255, 255, 1);*/ /* Fondo sólido 
+}/**/
+
+
